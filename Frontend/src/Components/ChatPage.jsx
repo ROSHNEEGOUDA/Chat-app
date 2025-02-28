@@ -3,7 +3,7 @@ import { auth, db } from "../firebase";
 import { collection, query, orderBy, onSnapshot, addDoc, serverTimestamp } from "firebase/firestore";
 import { io } from "socket.io-client";
 
-const socket = io("http://localhost:5013");
+const socket = io("https://chat-app-backend-delta-liard.vercel.app");
 
 const ChatPage = ({ selectedChat }) => {
     const [messages, setMessages] = useState([]);
