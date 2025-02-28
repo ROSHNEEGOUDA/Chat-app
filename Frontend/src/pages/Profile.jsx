@@ -62,7 +62,6 @@ const Profile = () => {
             console.error("Error logging out:", error);
         }
     };
-w
 
     if (loading) {
         return <Loader01 />;
