@@ -14,7 +14,7 @@ app.use(express.json());
 
 const io = socketIo(server, {
     cors: {
-        origin: "https://chat-app-bice-theta.vercel.app",
+        origin: "http://localhost:5173",
         methods: ["GET", "POST"]
     }
 });
